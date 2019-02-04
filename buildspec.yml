@@ -8,7 +8,12 @@ phases:
      - echo "pre_build step"
  build:
    commands:
-     - aws s3 sync --delete . "s3://mastersofconsulting"
+     - aws s3 sync --delete . "s3://mastersofconsulting.s3-website-eu-central-1.amazonaws.com/"
  post_build:
    commands:
      - echo "post_build step"
+
+
+
+
+
